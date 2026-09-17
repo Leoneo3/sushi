@@ -17,7 +17,7 @@
 ## 私隱及架構
 票號、收藏及設定僅儲存在自己瀏覽器 localStorage。公開只讀轉接服務只收到分店 ID，不會收到票號或收藏；服務提供者可能記錄正常網絡連線資訊。
 
-GitHub Pages 從 docs/ 發佈單一 HTML 及 PWA 資源。資料轉接位於 https://sushi-queue-hk-leo.leoneo.chatgpt.site/api/queue，只接受固定分店列表及分店 ID 路徑，不接受任意上游網址。
+GitHub Pages 從 docs/ 發佈單一 HTML 及 PWA 資源。資料轉接位於 https://sushi-api.leoneo-f3c.workers.dev/api/queue，只接受固定分店列表及分店 ID 路徑，不接受任意上游網址。
 
 ## 開發及驗證
 pnpm install 後執行 pnpm test、pnpm exec tsc --noEmit、pnpm run build。
