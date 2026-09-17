@@ -1,4 +1,4 @@
-const CACHE='sushi-shell-v2';
+const CACHE='sushi-shell-v3-cloudflare';
 const BASE=new URL('./',self.location.href).pathname;
 const SHELL=['offline.html','icon-192.png','icon-512.png','manifest.webmanifest'].map(p=>BASE+p);
 self.addEventListener('install',e=>{e.waitUntil(caches.open(CACHE).then(c=>c.addAll(SHELL)));});
